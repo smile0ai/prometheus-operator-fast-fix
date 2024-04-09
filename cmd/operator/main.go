@@ -163,6 +163,9 @@ func parseFlags(fs *flag.FlagSet) {
 	fs.Var(&cfg.ThanosRulerSelector, "thanos-ruler-instance-selector", "Label selector to filter ThanosRuler Custom Resources to watch.")
 	fs.Var(&cfg.SecretListWatchSelector, "secret-field-selector", "Field selector to filter Secrets to watch")
 
+	// Feature flags.
+	fs.StringVar(&cfg.FeatureFlagsFlag, "enable-features", "", "Comma-separated list of feature flags to enable. At the moment, no feature-flags are available.")
+
 	logging.RegisterFlags(fs, &logConfig)
 	versionutil.RegisterFlags(fs)
 
@@ -185,6 +188,8 @@ func run(fs *flag.FlagSet) int {
 
 	level.Info(logger).Log("msg", "Starting Prometheus Operator", "version", version.Info())
 	level.Info(logger).Log("build_context", version.BuildContext())
+
+	cfg.ParseFeatureFlags(logger)
 
 	if len(cfg.Namespaces.AllowList) > 0 && len(cfg.Namespaces.DenyList) > 0 {
 		level.Error(logger).Log(

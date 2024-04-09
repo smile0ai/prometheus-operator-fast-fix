@@ -20,6 +20,7 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/go-kit/log"
 	"golang.org/x/exp/maps"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"
@@ -62,6 +63,12 @@ type Config struct {
 
 	// Controller id for pod ownership
 	ControllerID string
+
+	// FeatureFlagsFlag is a comma-separated list of feature flags.
+	// It is stored as a string during flag parsing and converted to
+	// map before real usage.
+	FeatureFlagsFlag string
+	FeatureFlags     map[string]bool
 }
 
 // DefaultConfig returns a default operator configuration.
@@ -81,6 +88,19 @@ func DefaultConfig(cpu, memory string) Config {
 			AlertmanagerConfigAllowList: StringSet{},
 			ThanosRulerAllowList:        StringSet{},
 		},
+	}
+}
+
+func (c *Config) ParseFeatureFlags(l log.Logger) {
+	// No available feature flags at the moment.
+	availableFeatureFlags := []string{}
+
+	for _, flag := range strings.Split(c.FeatureFlagsFlag, ",") {
+		if slices.Contains(availableFeatureFlags, flag) {
+			c.FeatureFlags[flag] = true
+		} else {
+			l.Log("msg", "unknown feature flag", "flag", flag)
+		}
 	}
 }
 
