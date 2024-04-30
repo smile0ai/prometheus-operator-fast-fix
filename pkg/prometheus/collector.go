@@ -15,8 +15,8 @@
 package prometheus
 
 import (
-	v1 "github.com/smile0ai/prometheus-operator-fast-fix/pkg/apis/monitoring/v1"
 	"github.com/prometheus/client_golang/prometheus"
+	v1 "github.com/smile0ai/prometheus-operator-fast-fix/pkg/apis/monitoring/v1"
 	"k8s.io/client-go/tools/cache"
 )
 

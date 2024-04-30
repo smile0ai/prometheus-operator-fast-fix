@@ -23,13 +23,13 @@ import (
 
 	"github.com/go-kit/log"
 	"github.com/go-kit/log/level"
+	"github.com/prometheus/client_golang/prometheus"
 	validationv1alpha1 "github.com/smile0ai/prometheus-operator-fast-fix/pkg/alertmanager/validation/v1alpha1"
 	validationv1beta1 "github.com/smile0ai/prometheus-operator-fast-fix/pkg/alertmanager/validation/v1beta1"
 	monitoringv1 "github.com/smile0ai/prometheus-operator-fast-fix/pkg/apis/monitoring/v1"
 	monitoringv1alpha1 "github.com/smile0ai/prometheus-operator-fast-fix/pkg/apis/monitoring/v1alpha1"
 	monitoringv1beta1 "github.com/smile0ai/prometheus-operator-fast-fix/pkg/apis/monitoring/v1beta1"
 	promoperator "github.com/smile0ai/prometheus-operator-fast-fix/pkg/operator"
-	"github.com/prometheus/client_golang/prometheus"
 	"k8s.io/apimachinery/pkg/runtime"
 	"sigs.k8s.io/controller-runtime/pkg/webhook/conversion"
 
