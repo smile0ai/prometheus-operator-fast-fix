@@ -2805,6 +2805,10 @@ spec:
                             description: The Telegram chat ID.
                             format: int64
                             type: integer
+                          MessageThreadId:
+                            description: The Telegram Message Thread ID.
+                            format: int64
+                            type: integer
                           disableNotifications:
                             description: Disable telegram notifications
                             type: boolean
