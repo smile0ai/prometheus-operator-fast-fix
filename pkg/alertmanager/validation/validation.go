@@ -18,7 +18,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/prometheus/alertmanager/config"
+	"github.com/smile0ai/alertmanager-fast-fix/config"
 )
 
 // ValidateURL against the config.URL

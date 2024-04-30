@@ -33,10 +33,10 @@ import (
 	"k8s.io/apimachinery/pkg/util/intstr"
 	"k8s.io/utils/pointer"
 
-	"github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring"
-	monitoringv1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1"
-	"github.com/prometheus-operator/prometheus-operator/pkg/assets"
-	"github.com/prometheus-operator/prometheus-operator/pkg/operator"
+	"github.com/smile0ai/prometheus-operator-fast-fix/pkg/apis/monitoring"
+	monitoringv1 "github.com/smile0ai/prometheus-operator-fast-fix/pkg/apis/monitoring/v1"
+	"github.com/smile0ai/prometheus-operator-fast-fix/pkg/assets"
+	"github.com/smile0ai/prometheus-operator-fast-fix/pkg/operator"
 )
 
 func mustNewConfigGenerator(t *testing.T, p *monitoringv1.Prometheus) *ConfigGenerator {

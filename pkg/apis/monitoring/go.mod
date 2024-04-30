@@ -1,4 +1,4 @@
-module github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring
+module github.com/smile0ai/prometheus-operator-fast-fix/pkg/apis/monitoring
 
 go 1.17
 

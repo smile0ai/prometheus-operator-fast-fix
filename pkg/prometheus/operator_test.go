@@ -19,8 +19,8 @@ import (
 	"reflect"
 	"testing"
 
-	monitoringv1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1"
-	"github.com/prometheus-operator/prometheus-operator/pkg/operator"
+	monitoringv1 "github.com/smile0ai/prometheus-operator-fast-fix/pkg/apis/monitoring/v1"
+	"github.com/smile0ai/prometheus-operator-fast-fix/pkg/operator"
 	"github.com/prometheus/prometheus/model/relabel"
 	appsv1 "k8s.io/api/apps/v1"
 	v1 "k8s.io/api/core/v1"

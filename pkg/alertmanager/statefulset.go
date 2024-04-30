@@ -28,10 +28,10 @@ import (
 
 	"github.com/blang/semver/v4"
 	"github.com/pkg/errors"
-	monitoringv1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1"
-	"github.com/prometheus-operator/prometheus-operator/pkg/k8sutil"
-	"github.com/prometheus-operator/prometheus-operator/pkg/operator"
-	"github.com/prometheus-operator/prometheus-operator/pkg/webconfig"
+	monitoringv1 "github.com/smile0ai/prometheus-operator-fast-fix/pkg/apis/monitoring/v1"
+	"github.com/smile0ai/prometheus-operator-fast-fix/pkg/k8sutil"
+	"github.com/smile0ai/prometheus-operator-fast-fix/pkg/operator"
+	"github.com/smile0ai/prometheus-operator-fast-fix/pkg/webconfig"
 )
 
 const (

@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring"
+	"github.com/smile0ai/prometheus-operator-fast-fix/pkg/apis/monitoring"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"

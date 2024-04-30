@@ -25,14 +25,14 @@ import (
 	"github.com/go-kit/log"
 	"github.com/go-kit/log/level"
 	"github.com/pkg/errors"
-	"github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring"
-	"github.com/prometheus-operator/prometheus-operator/pkg/k8sutil"
-	"github.com/prometheus-operator/prometheus-operator/pkg/operator"
+	"github.com/smile0ai/prometheus-operator-fast-fix/pkg/apis/monitoring"
+	"github.com/smile0ai/prometheus-operator-fast-fix/pkg/k8sutil"
+	"github.com/smile0ai/prometheus-operator-fast-fix/pkg/operator"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	monitoringv1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1"
-	namespacelabeler "github.com/prometheus-operator/prometheus-operator/pkg/namespace-labeler"
+	monitoringv1 "github.com/smile0ai/prometheus-operator-fast-fix/pkg/apis/monitoring/v1"
+	namespacelabeler "github.com/smile0ai/prometheus-operator-fast-fix/pkg/namespace-labeler"
 )
 
 const labelPrometheusName = "prometheus-name"

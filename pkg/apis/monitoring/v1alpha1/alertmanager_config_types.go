@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"strings"
 
-	monitoringv1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1"
+	monitoringv1 "github.com/smile0ai/prometheus-operator-fast-fix/pkg/apis/monitoring/v1"
 
 	v1 "k8s.io/api/core/v1"
 	apiextensionsv1 "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1"
@@ -795,6 +795,8 @@ type TelegramConfig struct {
 	BotToken *v1.SecretKeySelector `json:"botToken,omitempty"`
 	// The Telegram chat ID.
 	ChatID int64 `json:"chatID,omitempty"`
+	// The Telegram Message Thread ID.
+	MessageThreadId int64 `json:"MessageThreadId,omitempty"`
 	// Message template
 	// +optional
 	Message string `json:"message,omitempty"`

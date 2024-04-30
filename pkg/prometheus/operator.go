@@ -43,14 +43,14 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/tools/cache"
 
-	monitoringv1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1"
-	"github.com/prometheus-operator/prometheus-operator/pkg/assets"
-	monitoringclient "github.com/prometheus-operator/prometheus-operator/pkg/client/versioned"
-	"github.com/prometheus-operator/prometheus-operator/pkg/informers"
-	"github.com/prometheus-operator/prometheus-operator/pkg/k8sutil"
-	"github.com/prometheus-operator/prometheus-operator/pkg/listwatch"
-	"github.com/prometheus-operator/prometheus-operator/pkg/operator"
-	"github.com/prometheus-operator/prometheus-operator/pkg/webconfig"
+	monitoringv1 "github.com/smile0ai/prometheus-operator-fast-fix/pkg/apis/monitoring/v1"
+	"github.com/smile0ai/prometheus-operator-fast-fix/pkg/assets"
+	monitoringclient "github.com/smile0ai/prometheus-operator-fast-fix/pkg/client/versioned"
+	"github.com/smile0ai/prometheus-operator-fast-fix/pkg/informers"
+	"github.com/smile0ai/prometheus-operator-fast-fix/pkg/k8sutil"
+	"github.com/smile0ai/prometheus-operator-fast-fix/pkg/listwatch"
+	"github.com/smile0ai/prometheus-operator-fast-fix/pkg/operator"
+	"github.com/smile0ai/prometheus-operator-fast-fix/pkg/webconfig"
 )
 
 const (

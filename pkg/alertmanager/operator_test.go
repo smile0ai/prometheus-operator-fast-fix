@@ -31,11 +31,11 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/client-go/kubernetes/fake"
 
-	monitoringv1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1"
-	monitoringv1alpha1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1alpha1"
-	"github.com/prometheus-operator/prometheus-operator/pkg/assets"
-	monitoringfake "github.com/prometheus-operator/prometheus-operator/pkg/client/versioned/fake"
-	"github.com/prometheus-operator/prometheus-operator/pkg/operator"
+	monitoringv1 "github.com/smile0ai/prometheus-operator-fast-fix/pkg/apis/monitoring/v1"
+	monitoringv1alpha1 "github.com/smile0ai/prometheus-operator-fast-fix/pkg/apis/monitoring/v1alpha1"
+	"github.com/smile0ai/prometheus-operator-fast-fix/pkg/assets"
+	monitoringfake "github.com/smile0ai/prometheus-operator-fast-fix/pkg/client/versioned/fake"
+	"github.com/smile0ai/prometheus-operator-fast-fix/pkg/operator"
 )
 
 func strPtr(str string) *string {

@@ -24,7 +24,7 @@ import (
 	"github.com/pkg/errors"
 	"github.com/prometheus/prometheus/model/rulefmt"
 
-	monitoringv1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1"
+	monitoringv1 "github.com/smile0ai/prometheus-operator-fast-fix/pkg/apis/monitoring/v1"
 	thanostypes "github.com/thanos-io/thanos/pkg/store/storepb"
 )
 

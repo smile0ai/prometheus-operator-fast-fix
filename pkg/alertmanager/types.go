@@ -17,8 +17,8 @@ package alertmanager
 import (
 	"time"
 
-	"github.com/prometheus/alertmanager/config"
-	"github.com/prometheus/common/model"
+	"github.com/smile0ai/alertmanager-fast-fix/config"
+	"https://github.com/smile0ai/common-fix/model"
 )
 
 // Customization of Config type from alertmanager repo:
@@ -327,6 +327,7 @@ type telegramConfig struct {
 	DisableNotifications bool              `yaml:"disable_notifications,omitempty" json:"disable_notifications,omitempty"`
 	ParseMode            string            `yaml:"parse_mode,omitempty" json:"parse_mode,omitempty"`
 	HTTPConfig           *httpClientConfig `yaml:"http_config,omitempty" json:"http_config,omitempty"`
+        MessageThreadId      int64             `yaml:"message_thread_id,omitempty" json:"message_thread_id,omitempty"`
 }
 
 type sigV4Config struct {

@@ -21,7 +21,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/prometheus-operator/prometheus-operator/pkg/webconfig"
+	"github.com/smile0ai/prometheus-operator-fast-fix/pkg/webconfig"
 
 	appsv1 "k8s.io/api/apps/v1"
 	v1 "k8s.io/api/core/v1"
@@ -33,9 +33,9 @@ import (
 	"github.com/go-kit/log/level"
 	"github.com/pkg/errors"
 
-	monitoringv1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1"
-	"github.com/prometheus-operator/prometheus-operator/pkg/k8sutil"
-	"github.com/prometheus-operator/prometheus-operator/pkg/operator"
+	monitoringv1 "github.com/smile0ai/prometheus-operator-fast-fix/pkg/apis/monitoring/v1"
+	"github.com/smile0ai/prometheus-operator-fast-fix/pkg/k8sutil"
+	"github.com/smile0ai/prometheus-operator-fast-fix/pkg/operator"
 )
 
 const (
